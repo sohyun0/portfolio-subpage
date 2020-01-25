@@ -235,19 +235,20 @@ article img {
   text-align: center;
 }
 .content .tab-menu .design-menu .design-img {
-  overflow: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
   float: left;
   width: 50%;
   height: 780px;
 }
+.content .tab-menu .design-menu .design-img {
+  display: none;
+}
 .content .tab-menu .design-menu .design-img img {
   width: 100%;
 }
-.content .tab-menu .design-menu .design-img [alt="서브페이지actor"] {
-  display: none;
-}
-.content .tab-menu .design-menu .design-img [alt="서브페이지things"] {
-  display: none;
+.content .tab-menu .design-menu .design-img .on {
+  display: block;
 }
 .content .tab-menu .design-menu .design-mini-slide {
   float: right;
