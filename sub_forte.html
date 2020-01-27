@@ -11,8 +11,11 @@
     />
     <link rel="stylesheet" href="css/reset_all.css" />
     <link rel="stylesheet" href="css/portfolio_font.css" />
-    <link rel="stylesheet" href="css/swiper.css" />
     <link rel="stylesheet" href="css/sub_forte.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/slick_custom.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
@@ -20,6 +23,8 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/swiper_custom.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/slick_custom.js"></script>
     <script src="js/tab.js"></script>
   </head>
   <body>
@@ -136,19 +141,13 @@
             <img src="images/forte_styleguide.jpg" alt="스타일가이드" />
           </div>
           <div class="tab design-menu cf">
-            <div class="design-img">
-              <div class="on">
-                <img src="images/forte_main.jpg" alt="메인페이지" />
-              </div>
-              <div>
-                <img src="images/forte_sub.jpg" alt="서브페이지actor" />
-              </div>
-              <div>
-                <img src="images/forte_sub2.jpg" alt="서브페이지things" />
-              </div>
+            <div class="design-tab">
+              <img src="images/forte_main.jpg" class="on" alt="메인페이지" />
+              <img src="images/forte_sub.jpg" alt="서브페이지actor" />
+              <img src="images/forte_sub2.jpg" alt="서브페이지things" />
             </div>
             <ul class="design-mini-slide">
-              <li>
+              <li class="on">
                 <img
                   src="images/forte_main_minislide_img.jpg"
                   alt="메인페이지 미리보기"
@@ -174,41 +173,37 @@
         <!--3-5. 슬라이더 메뉴-->
         <div class="slide-menu">
           <h2 class="font_po">Other Project</h2>
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <a href="#" class="swiper-slide"
-                ><img
-                  src="images/bakery_Mockup_mini_trans.png"
-                  alt="베이커리 목업이미지"
-              /></a>
-              <a href="#" class="swiper-slide"
-                ><img
-                  src="images/balenciaga_Mockup_mini_trans.png"
-                  alt="발렌시아가 목업이미지"
-              /></a>
-              <a href="#" class="swiper-slide"
-                ><img
-                  src="images/forte_Mockup_mini_trans.png"
-                  alt="포르테 목업이미지"
-              /></a>
-              <a href="#" class="swiper-slide"
-                ><img
-                  src="images/portfolio_Mockup_mini_trans.png"
-                  alt="포트폴리오 목업이미지"
-              /></a>
-              <a href="#" class="swiper-slide"
-                ><img
-                  src="images/baptong_Mockup_mini_trans.png"
-                  alt="밥통 목업이미지"
-              /></a>
-              <a href="#" class="swiper-slide"
-                ><img
-                  src="images/ohreal_Mockup_mini_trans.png"
-                  alt="어리얼 목업이미지"
-              /></a>
-            </div>
-            <!-- 페이징 -->
-            <div class="swiper-pagination"></div>
+          <div class="other-slide">
+            <a href="#"
+              ><img
+                src="images/bakery_Mockup_mini_trans.png"
+                alt="베이커리 목업이미지"
+            /></a>
+            <a href="#"
+              ><img
+                src="images/balenciaga_Mockup_mini_trans.png"
+                alt="발렌시아가 목업이미지"
+            /></a>
+            <a href="#"
+              ><img
+                src="images/forte_Mockup_mini_trans.png"
+                alt="포르테 목업이미지"
+            /></a>
+            <a href="#"
+              ><img
+                src="images/portfolio_Mockup_mini_trans.png"
+                alt="포트폴리오 목업이미지"
+            /></a>
+            <a href="#"
+              ><img
+                src="images/baptong_Mockup_mini_trans.png"
+                alt="밥통 목업이미지"
+            /></a>
+            <a href="#"
+              ><img
+                src="images/ohreal_Mockup_mini_trans.png"
+                alt="어리얼 목업이미지"
+            /></a>
           </div>
         </div>
         <!--3-5. 슬라이더 메뉴-->

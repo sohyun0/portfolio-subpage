@@ -42,6 +42,7 @@ header .btn_menu_toggle .gnb {
   background-color: #01172c;
   /*추후변경*/
   position: fixed;
+  z-index: 1000;
 }
 header .btn_menu_toggle .gnb h1 {
   float: left;
@@ -239,6 +240,7 @@ article img {
   display: none;
   height: auto;
 }
+/* 사이트맵 */
 /*탭버튼과 각각 탭내용 연결 | 형제선택자 사용(~) 클릭할때 블록형태로변경*/
 .content .tab-menu input[id="siteMap"]:checked ~ .sitemap-menu {
   display: block;
@@ -255,6 +257,7 @@ article img {
   display: block;
   text-align: center;
 }
+/* 스타일가이드 */
 .content .tab-menu .stylegulde-menu {
   overflow: scroll;
   heigth: 780px;
@@ -265,26 +268,26 @@ article img {
   display: block;
   text-align: center;
 }
-.content .tab-menu .design-menu .design-img {
+/* 디자인 */
+.content .tab-menu .design-menu .design-tab {
   overflow-y: auto;
   overflow-x: hidden;
   float: left;
   width: 50%;
   height: 780px;
 }
-.content .tab-menu .design-menu .design-img {
+.content .tab-menu .design-menu .design-tab img {
   display: none;
-}
-.content .tab-menu .design-menu .design-img img {
   width: 100%;
 }
-.content .tab-menu .design-menu .design-img .on {
+.content .tab-menu .design-menu .design-tab .on {
   display: block;
 }
 .content .tab-menu .design-menu .design-mini-slide {
   float: right;
   width: 50%;
 }
+
 /*3-4-2탭내용*/
 /*3-4탭영역*/
 /*3-5슬라이더영역*/
@@ -298,27 +301,19 @@ article img {
   padding-bottom: 30px;
 }
 /*swiper custom*/
-.content .slide-menu .swiper-container {
+.content .slide-menu .other-slide {
   width: 100%;
   max-width: 1132px;
+  margin: 0 auto;
 }
-.content .slide-menu .swiper-container .swiper-wrapper img {
+.content .slide-menu .other-slide a img {
   width: 100%;
-}
-/*불릿*/
-.content .slide-menu .swiper-pagination-bullet {
-  margin-top: 20px;
-  background: #555;
-  opacity: 1;
-}
-.content .slide-menu .swiper-pagination-bullet-active {
-  background: #f00;
 }
 /*3-5슬라이더영역*/
 /*3. 컨텐츠영역*/
 /*4. 푸터영역*/
 footer {
-  padding: 30px 0;
+  padding: 40px 0;
 }
 footer p {
   text-align: center;
@@ -339,7 +334,7 @@ footer p {
     position: fixed;
     top: 25px;
     left: 15px;
-    z-index: 100;
+    z-index: 10000;
   }
   header .btn_menu_toggle input[id="menuicon"] + label span {
     display: block;
